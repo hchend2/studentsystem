@@ -12,7 +12,7 @@ class Student {
         int age;
     
     public:
-        void setLatName(string lastName) {
+        void setLastName(string lastName) {
             this->lastName = lastName;
         }
         string getLastName() {
@@ -24,8 +24,23 @@ class Student {
         string getFistName() {
             return  firstName;
         }
+        void setAge(int age) {
+            this->age = age;
+        }
+        int getAge() {
+            return  age;
+        }
 };
 
 int main() {
-  cout << "Hello World!" << endl;
+  
+
+    Student student;
+    cout << endl;
+    student.setFirstName("herve");
+    student.setLastName("Chendjou");
+    student.setAge(30);
+    cout << "First name: " << student.getFistName() << endl;
+    cout << "Last name: " << student.getLastName() << endl;
+    cout << "Age: " << student.getAge() << endl;
 }
