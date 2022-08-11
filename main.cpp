@@ -61,20 +61,31 @@ class Student {
         college = "College of Engineering";
         major = "CS-Software Engineering";
     }
+
+    Student(string lastName, string firstName, int age, string university,
+            string college, string major) {
+        this->lastName = lastName;
+        this->firstName = firstName;
+        this->age = age;
+        this->university = university;
+        this->college = college;
+        this->major = major;
+    }
 };
 
 int main() {
   
 
-    Student student;
+    Student student1 = Student("Chendjou", "Herve", 28, "UIC", "College of engineering",
+                              "CS-SoftWare Engineering");
     cout << endl;
     // student.setFirstName("herve");
     // student.setLastName("Chendjou");
     // student.setAge(30);
-    cout << "First name: " << student.getFistName() << endl;
-    cout << "Last name: " << student.getLastName() << endl;
-    cout << "Age: " << student.getAge() << endl;
-    cout << "University: " << student.getUniversity() << endl;
-    cout << "College: " << student.getCollege() << endl;
-    cout << "Major: " << student.getMajor() << endl;
+    cout << "First name: " << student1.getFistName() << endl;
+    cout << "Last name: " << student1.getLastName() << endl;
+    cout << "Age: " << student1.getAge() << endl;
+    cout << "University: " << student1.getUniversity() << endl;
+    cout << "College: " << student1.getCollege() << endl;
+    cout << "Major: " << student1.getMajor() << endl;
 }
