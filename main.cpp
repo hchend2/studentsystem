@@ -71,6 +71,15 @@ class Student {
         this->college = college;
         this->major = major;
     }
+
+    void printInfo() {
+        cout << "First name: " << firstName << endl;
+        cout << "Last name: " << lastName<< endl;
+        cout << "Age: " << age << endl;
+        cout << "University: " << university << endl;
+        cout << "College: " << college << endl;
+        cout << "Major: " << major << endl;
+    }
 };
 
 int main() {
@@ -79,13 +88,11 @@ int main() {
     Student student1 = Student("Chendjou", "Herve", 28, "UIC", "College of engineering",
                               "CS-SoftWare Engineering");
     cout << endl;
-    // student.setFirstName("herve");
-    // student.setLastName("Chendjou");
-    // student.setAge(30);
-    cout << "First name: " << student1.getFistName() << endl;
-    cout << "Last name: " << student1.getLastName() << endl;
-    cout << "Age: " << student1.getAge() << endl;
-    cout << "University: " << student1.getUniversity() << endl;
-    cout << "College: " << student1.getCollege() << endl;
-    cout << "Major: " << student1.getMajor() << endl;
+    student1.printInfo();
+    
+    Student student2 = Student("Laferve", "Marylu", 24, "UIC", "College of Medicine",
+                              "R Nurse");
+    cout << endl;
+    student2.printInfo();
+    
 }
